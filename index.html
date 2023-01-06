@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic IO</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    
+    <div class="header"><h1>Input Output</h1></div>
+    <div class="container">
+        <div class="stringIO" onclick="stringIO()">STRING I-O</div>
+        <div class="stringMainDiv">
+            <div class="divOne">
+                <h3>First Name: </h3>
+                <input type="text" id="firstName" placeholder="Enter your First name: ">
+                <h3>Last Name: </h3>
+                <input type="text" id="lastName" placeholder="Enter your Last name: ">
+                <input type="submit" id="submitOne" value="Submit" onclick="divOneFn()">
+                <h3>Result:</h3><p class="divOneResult"></p> 
+            </div>
+            <div class="divTwo">
+                <h3 >Enter New Username: (min. <span><input type="text" id="limiterStr"></span> char)</h3>
+                <h6 style="margin-top: 2px; color: maroon;">Note: You can put minimum on input character</h6>
+                <!-- <input type="text" id="limiterUName" placeholder="# of min. char"> -->
+                <input type="text" id="userName"  placeholder="Enter a username: ">
+                <input type="submit" id="submitTwo" value="Submit" onclick="divTwoFn()">
+                <h3>Result:</h3><p class="divTwoResult"></p> 
+            </div>
+            <div class="divTwo">
+                <h3 >Please enter a string: </h3>
+                
+                <!-- <input type="text" id="limiterUName" placeholder="# of min. char"> -->
+                <input type="text" id="inputString" placeholder="Enter a string: ">
+                <input type="submit" id="submitThree" value="Submit" onclick="divThreeFn()">
+                <label><input type="checkbox" id="noSpChar">Check if has Special character</label>
+                <label><input type="checkbox" id="noNum">Check if has Number</label>
+                <h3>Result:</h3><p class="divThreeResult"></p> 
+            </div>
+        </div>
+        <div class="mathIO" onclick="mathIO()">MATH I-O</div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    font-family: Aboreto, sans-serif;
+}
+
+p {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    
+    color: #08090a;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+    
+}
+
+.container {
+    display: flex;
+    height: auto;
+    width: auto;
+    border: 5px solid #222823;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Section for settings under stringIO div ONLY */
+.stringMainDiv {
+display: none;
+flex: 1;
+margin: 20px;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.divOne, .divTwo {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    height: 350px;
+}
+
+input, #limiterStr{
+    height: 25px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #586A6A;
+    transition: color 0.5s ease;
+}
+
+#limiterUName {
+width: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(252, 12, 12, 0.111);
+}
+
+#limiterStr {
+    width: 25px;
+    
+}
+
+#noSpChar, #noNum {
+    width: 15px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+#submitOne, #submitTwo, #submitThree {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 25px;
+    width: 80px;
+}
+
+.divOneResult, .divTwoResult, .divThreeResult {
+    background-color: #353e3691;
+    color: aliceblue;
+    flex: 1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+/* Section for DIVS same properties setup for stringIO and mathIO */
+.stringIO, .mathIO{
+    display: flex;
+    background-color: #2228233a ;
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.stringIO:hover, .mathIO:hover {
+    background-color: #575a5ee0;
+    transition: 0.6s;
+    color: white;
+    font-size: 25px;
+}
+
